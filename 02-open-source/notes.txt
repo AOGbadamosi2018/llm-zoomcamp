@@ -3,4 +3,7 @@ Handy file for removing docker container and docker images
 a. docker rm -vf $(docker ps -aq)
 
 
-b. docker images -a -q | % { docker image rm $_ -f }
+b. docker rmi -f $(docker images -aq)
+
+windows powershell
+c.  docker images -a -q | % { docker image rm $_ -f }
