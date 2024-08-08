@@ -7,3 +7,6 @@ b. docker rmi -f $(docker images -aq)
 
 windows powershell
 c.  docker images -a -q | % { docker image rm $_ -f }
+
+Codespaces storage management 
+https://docs.github.com/en/codespaces/troubleshooting/troubleshooting-creation-and-deletion-of-codespaces
