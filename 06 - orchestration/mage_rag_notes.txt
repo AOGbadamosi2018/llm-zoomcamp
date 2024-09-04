@@ -24,3 +24,12 @@ C. Elasticsearch connection refused or Authentication Error: To solve connection
         - app-network '''
 
     Your CONNECTION STRING should be `http://elasticsearch:9200`
+
+D. Exporter block failing in 'ragic' pipeline. 
+
+    i. Go into the edit pipeline for the 'ragic' pipeline 
+    ii. Make sure to connect all the blocks in a sequential order to avoid an upstream error 
+    i.e Data Loader block ---> Transformer blocks(radiant photon--> vivid nexus-->prismatic axiom) ---> numinous fission
+    iii. in the prismatic axion code change the connection string line and save. 
+        i.e change connection_string = kwargs.get('connection_string', ''http://localhost:9200'') to connection_string = 'http://elasticsearch:9200'
+                    
