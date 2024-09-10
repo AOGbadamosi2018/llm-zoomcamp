@@ -1,0 +1,9 @@
+spire.docs
+tiktoken
+sentence_transformers==2.7.0
+elasticsearch
+python-docx
+openai
+numpy==1.26.4
+torch
+json
