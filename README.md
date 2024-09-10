@@ -20,7 +20,7 @@ Computed the cost per interaction.
 
 
 #### HOW TO RUN 
-Create a virtual environmentt 
+Create a virtual environment. 
 Install all the dependencies in the requirements.txt file in the 01-intro/project_isw folder 
 Export OPENAI_API_KEY to the environment 
 CHECK OPENAI_API_KEY is recognized by the environment by using echo $OPENAI_API_KEY
