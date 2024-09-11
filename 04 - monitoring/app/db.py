@@ -3,7 +3,7 @@ from psycopg2.extras import DictCursor
 
 def get_db_connection():
     return psycopg2.connect(
-        host="localhost",
+        host="postgres",
         database="course_assistant",
         user="your_username",
         password="your_password"
