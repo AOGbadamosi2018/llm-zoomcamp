@@ -1,16 +1,26 @@
+import os
 import requests
 import pandas as pd
 from sentence_transformers import SentenceTransformer
 from elasticsearch import Elasticsearch
 from tqdm.auto import tqdm
+from dotenv import load_dotenv
 
 from db import init_db
 
+
+
+load_dotenv()
+
+ELASTIC_URL = os.getenv("ELASTIC_URL_LOCAL")
+MODEL_NAME = os.getenv("MODEL_NAME")
+INDEX_NAME = os.getenv("INDEX_NAME")
+
+
 # Constants
-ELASTIC_URL = 'http://localhost:9201'
+
 BASE_URL = 'https://github.com/DataTalksClub/llm-zoomcamp/blob/main'
-MODEL_NAME = 'multi-qa-MiniLM-L6-cos-v1'
-INDEX_NAME = "course-questions"
+
 
 def fetch_documents():
     print("Fetching documents...")

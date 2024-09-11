@@ -34,6 +34,13 @@ services:
     build:
       context: .
       dockerfile: Dockerfile
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - OLLAMA_URL=http://ollama:11434/v1/
+      - POSTGRES_HOST=localhost
+      - POSTGRES_DB=${POSTGRES_DB:-course_assistant}
+      - POSTGRES_USER=${POSTGRES_USER:-your_username}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-your_password}
     ports:
       - "8501:8501"
     depends_on:

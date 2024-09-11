@@ -1,18 +1,19 @@
-import streamlit as st
-import time
-
+import os
 from elasticsearch import Elasticsearch
 from openai import OpenAI
 
+
+ELASTIC_URL = os.getenv('ELASTIC_URL', 'http://elasticsearch:9200')
+OLLAMA_URL = os.getenv('OLLAMA_URL', 'http://ollama:11434/v1/')
+
+
+es_client = Elasticsearch(ELASTIC_URL)
 client = OpenAI(
-    base_url='http://localhost:11434/v1/',
-    api_key='ollama',
+    base_url=OLLAMA_URL,
+    api_key='ollama'
 )
 
-es_client = Elasticsearch('http://localhost:9201') 
-
-
-def elastic_search(query, index_name = "course-questions"):
+def elastic_search(query, course, index_name="course-questions"):
     search_query = {
         "size": 5,
         "query": {
@@ -26,7 +27,7 @@ def elastic_search(query, index_name = "course-questions"):
                 },
                 "filter": {
                     "term": {
-                        "course": "data-engineering-zoomcamp"
+                        "course": course
                     }
                 }
             }
@@ -34,14 +35,7 @@ def elastic_search(query, index_name = "course-questions"):
     }
 
     response = es_client.search(index=index_name, body=search_query)
-    
-    result_docs = []
-    
-    for hit in response['hits']['hits']:
-        result_docs.append(hit['_source'])
-    
-    return result_docs
-
+    return [hit['_source'] for hit in response['hits']['hits']]
 
 def build_prompt(query, search_results):
     prompt_template = """
@@ -54,40 +48,18 @@ CONTEXT:
 {context}
 """.strip()
 
-    context = ""
-    
-    for doc in search_results:
-        context = context + f"section: {doc['section']}\nquestion: {doc['question']}\nanswer: {doc['text']}\n\n"
-    
-    prompt = prompt_template.format(question=query, context=context).strip()
-    return prompt
+    context = "\n\n".join([f"section: {doc['section']}\nquestion: {doc['question']}\nanswer: {doc['text']}" for doc in search_results])
+    return prompt_template.format(question=query, context=context).strip()
 
 def llm(prompt):
     response = client.chat.completions.create(
         model='phi3',
         messages=[{"role": "user", "content": prompt}]
     )
-    
     return response.choices[0].message.content
 
-
-def rag(query):
-    search_results = elastic_search(query)
+def get_answer(query, course):
+    search_results = elastic_search(query, course)
     prompt = build_prompt(query, search_results)
     answer = llm(prompt)
     return answer
-
-
-def main():
-    st.title("RAG Function Invocation")
-
-    user_input = st.text_input("Enter your input:")
-
-    if st.button("Ask"):
-        with st.spinner('Processing...'):
-            output = rag(user_input)
-            st.success("Completed!")
-            st.write(output)
-
-if __name__ == "__main__":
-    main()
