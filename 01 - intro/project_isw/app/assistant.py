@@ -56,7 +56,7 @@ client = OpenAI(
 #         )
 #     return [hit['_source'] for hit in response['hits']['hits']]
 
-def elastic_search(query, subject=None, index_name="isw-rebirth-faq"):
+def elastic_search(query, subject=None, index_name="course-questions"):
 
     search_query = {
         "size": 5,
@@ -96,7 +96,7 @@ CONTEXT:
 {context}
 """.strip()
 
-    context = "\n\n".join([f"section: {doc['section']}\nquestion: {doc['question']}\nanswer: {doc['text']}" for doc in search_results])
+    context = "\n\n".join([f"question: {doc['question']}\nanswer: {doc['text']}" for doc in search_results])
     return prompt_template.format(question=query, context=context).strip()
 
 def llm(prompt):

@@ -8,5 +8,5 @@ services:
       - discovery.type=single-node
       - xpack.security.enabled=false
     ports:
-      - "9201:9200"
-      - "9301:9300"
+      - "9200:9200"
+      - "9300:9300"
