@@ -14,10 +14,10 @@ OLLAMA_URL = os.getenv('OLLAMA_URL', 'http://ollama:11434/v1/')
 
 
 es_client = Elasticsearch(ELASTIC_URL)
-client = OpenAI(
-    base_url=OLLAMA_URL,
-    api_key='ollama'
-)
+# client = OpenAI(
+#     base_url=OLLAMA_URL,
+#     api_key='ollama'
+# )
 
 # def elastic_search_semantic(query, subject=None, index_name="isw-rebirth-faq"):
 #     query=search_term
@@ -65,7 +65,7 @@ def elastic_search(query, subject=None, index_name="course-questions"):
                 "must": {
                     "multi_match": {
                         "query": query,
-                        "fields": ["question^3", "text"],
+                        "fields": ["question", "text"],
                         "type": "best_fields"
                     }
                 }
@@ -89,6 +89,7 @@ def build_prompt(query, search_results):
     prompt_template = """
 You're a Financial Services application assistant. Answer the QUESTION based on the CONTEXT from the FAQ database.
 Use only the facts from the CONTEXT when answering the QUESTION.
+If the CONTEXT doesn't contain the answer , output NONE
 
 QUESTION: {question}
 
@@ -99,11 +100,20 @@ CONTEXT:
     context = "\n\n".join([f"question: {doc['question']}\nanswer: {doc['text']}" for doc in search_results])
     return prompt_template.format(question=query, context=context).strip()
 
+# def llm(prompt):
+#     response = client.chat.completions.create(
+#         model='phi3',
+#         messages=[{"role": "user", "content": prompt}]
+#     )
+#     return response.choices[0].message.content
+
 def llm(prompt):
+    #client = OpenAI(api_key = os.environ['OPENAI_API_KEY'])
+    client = OpenAI(api_key = os.getenv('OPENAI_API_KEY', 'somethingspecial'))
     response = client.chat.completions.create(
-        model='phi3',
-        messages=[{"role": "user", "content": prompt}]
-    )
+    model='gpt-4o-mini',
+    messages=[{"role":'user', "content":prompt}])
+
     return response.choices[0].message.content
 
 def get_answer(query, subject=None):
