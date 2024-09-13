@@ -1,0 +1,180 @@
+[
+  {
+    "subject": "isw_general_faq",
+    "documents": [
+      {
+        "text": "FAQTalk To Us\nClick on the Buy Airtime Menu\nSelect \u201cTOP-UP YOUR PHONE\u201d for Self Recharge or \u201cTOP-UP OTHER PHONES\u201d for Third Party Recharge and complete the fields by selecting the desired airtime amount and network.\nInsert Card Details, i.e. Card number, Expiry Date, CVV, PIN, Safetoken/OTP, or Verve eCash PIN if you are using eCash",
+        "question": "How do I buy Airtime via Quickteller"
+      },
+      {
+        "text": "Click on the Transfer Money menu\nComplete the fields by inserting the account number, desired bank name and amount\nInsert Card Details, i.e. PAN, Expiry Date, CVV, PIN, Safetoken/OTP or Verve eCash PIN if you are transferring from your eCash account.",
+        "question": "How do I Transfer Money via Quickteller"
+      },
+      {
+        "text": "Click on the Pay Bills menu\nSearch for the biller or go to the billers category and select the biller\nInsert the customer ID\nInsert Card Details, i.e. Card number, Expiry Date, CVV, PIN, Safetoken/OTP, or Verve eCash PIN if you are using eCash",
+        "question": "How do I Pay Bills via Quickteller"
+      },
+      {
+        "text": "Verve cards and Naira MasterCard are currently accepted for all transaction types. VISA cards are also supported for airtime and bill payments on the website.",
+        "question": "What types of cards can I use to make payment on QuickTeller?"
+      },
+      {
+        "text": "To add a card via the website;\nClick on \"Card\" under Payment Methods from the Quickteller dashboard\nClick on Add card\nEnter your card details and complete the steps to add your card\nTo add a card via the mobile app;\nTap on \"My Wallet\" from the \"Sidebar Menu\"\nTap on \"Add a New Card\"\nEnter your card details and complete the steps to add your card\nTo add a card while carrying out a transaction;\nClick on the service you would like to pay for\nEnter your new card details\nClick on the \"Add card to Wallet\" button\nComplete your payment. Your new card can be viewed in the cards module",
+        "question": "How do I add my card on Quickteller"
+      },
+      {
+        "text": "To delete a card via the mobile app;\nTap on \"My Wallet\" from the \"Sidebar Menu\"\nTap on an existing card\nSelect \"Delete Card\" to successfully delete your card",
+        "question": "How do I delete my card on Quickteller?"
+      },
+      {
+        "text": "Buy airtime \u2013 All at face value. No additional charges.\nPay bill \u2013 A N100 convenience fee is charged for each successful transaction\nSend Money \u2013 Up-to N52.50 convenience fee is charged for each successful transaction,\nReceive Money\u2013 At no cost to the recipient.\nPrepaid Card Funding \u2013 All at face value. No additional charges.",
+        "question": "Are there any fees for this service, monthly charges or annual fees?"
+      },
+      {
+        "text": "The Interswitch payment gateway minimum amount is N50 and no maximum amount is defined by the payment gate. The maximum amount for recharge is N20,000 while bill payment and transfers is defined by your bank and can be adjusted by visiting you bank.",
+        "question": "Are there minimum or maximum amounts that can be paid?"
+      },
+      {
+        "text": "Contact [email\u00a0protected] with your payment reference.",
+        "question": "I made a successful payment but I am yet to receive service as expected"
+      },
+      {
+        "text": "Your bank should reverse the transaction within 24 hours. If the funds are yet to be reversed into your account or card you may contact [email\u00a0protected] or call +2347009065000",
+        "question": "I made a payment that was not successful but I have been debited"
+      },
+      {
+        "text": "We have made the dashboard easy for you to transact quickly. You can check the balance of your ecash in one view, view saved payments and the number of transactions per payment types. You can view the transaction history for the month.",
+        "question": "How do I use the Dashboard?"
+      },
+      {
+        "text": "One-Time Password, and is used to authenticate a card-not-present transaction (Verve card or MasterCard).",
+        "question": "What is the meaning of Safetoken/OTP?"
+      },
+      {
+        "text": "OTP can be delivered via the following channels: SMS and email. If you experience a delay in receiving your OTP, you can request for the OTP to be delivered via WhatsApp.",
+        "question": "What channels are available for delivering OTP?"
+      },
+      {
+        "text": "Add our official WhatsApp number 07009065000 to your contacts and initiate a chat to request for the OTP. 07009065000 is the only WhatsApp number we use for OTP requests, and we will never request for your personal information.\nMake a request to receive the OTP on the chat using the mobile number linked to your account on the Platform.\nFollow the prompts to receive the OTP.",
+        "question": "How can I request for my OTP to be sent via WhatApp?"
+      },
+      {
+        "text": "Yes, however for self-recharge transactions, SafeToken/OTP is not required.\nNOTE: For GTB and Zenith Bank cardholders, use OTP device provided by the bank.",
+        "question": "Must I always enter Safetoken/OTP?"
+      },
+      {
+        "text": "Kindly follow the steps below to get your card registered for the OTP service.\nVisit an ATM\nInsert your card\nSelect Quickteller\nSelect \"Pay bills\"\nChoose your account type\nSelect \u201cOthers\u201d\nEnter 322222 as the payment code\nEnter your phone number as \u201cCustomer Reference\u201d\nAccept the N1.00 amount displayed\nFollow prompts to complete the activation",
+        "question": "How do I register for a safetoken/OTP?"
+      },
+      {
+        "text": "To request for a loan via the website\nClick here\nEnter requested loan amount, account number to receive the loan as well as bank name\nProceed to select the preferred loan provider and accept the loan offer.\nTo request for a loan using Short Code\nDial *723#\nSelect 'Get Loan'\nFollow prompt to get your loan disbursed\nHow do I request for a loan extension? (Migo Only)\nTo request a loan extension, simply dial *561# from your registered number\nSelect 'loans'\nSelect 'extend Loan'",
+        "question": "How do I request for a Loan"
+      },
+      {
+        "text": "How do I repay online\nGo to www.quickteller.com/ils and select the lender you have a loan with\nEnter your phone number you used to apply and enter your email.\nConfirm amount to pay.\nEnter card details and complete repayment\nHow do I repay using the ATM\nInsert your ATM card and select the 'Quickteller' option\nSelect 'Pay Bills'\nSelect 'Others'\nEnter Biller/Payment Code e.g. 04309403(Migo) or 04309401(Ferratum) or 04309407(Xtracash) or 04309411(Quickloan (Payzfast)) or 04309408(Instantcash) or 04309406(Lendaba) or 053389801(QuickFund) or 0439773977(Lendme) or  053389601(Creditdirect) or  04396902(Moninow)\nFor the Customer Reference Number, enter the phone number used to request the loan\nConfirm payment\nHow do I repay using Short code (USSD)\nDial *723#\nSelect 'Pay Bills'\nSelect 'Others'\nEnter your Loan Biller name Migo, Ferratum, Xtracash, Quickloan (Payzfast), Instantcash, Lendaba, Lendme, QuickFund, Creditdirect, Moninow.\nFor the Customer Reference Number, enter the phone number used to request the loan\nEnter amount\nSelect a card and enter card details\nConfirm payment\nHow do I repay at the Bank\nWalk into any of these banks listed: Fidelity, Access, UBA, Keystone, Sterling, GT bank, Wema, Unity or Polaris\nInform the bank you want to pay your loan on PAYDIRECT and give them your loan phone number as customer reference number.\nHow do I repay at a Quickteller paypoint agent kiosk or shop\nWalk into a Quickteler Paypoint agent's location near you and request to repay your loan.\nYou will be asked to provide your phone number and cash for repayment.\nHow do I pay with my ewallet\nLog into your Quickteller account.\nSearch for the lender you have a loan with on the search bar.\nEnter your phone number used to apply for the loan, click on continue.\nOn the card page, select your ewallet card as a repayment option and proceed to make payment\nHow to use pay with transfer method\nClick on the unique lenders link (https://www.quickteller.com/lender/xxxxxxxx)\nSelect Repay loan.\nSelect the pay now button\nSelect Repay Loan with Bank Transfer and an Account number will be specifically generated for the customer.\nInitiate a transfer using the account number generated for you.",
+        "question": "How do I pay back my Loan"
+      },
+      {
+        "text": "To request for a loan via the mobile app;\nTap on \"Loan\" from either the \"Menu sidebar\" or \"Quick Services\"\nTap on \"Request Loan\"\nProceed to select the preferred loan provider and accept the loan offer.\nSelect your preferred card or enter a new card where your loan will be credited to",
+        "question": "How can I request for a loan on my Quickteller mobile app?"
+      },
+      {
+        "text": "To repay your loan via the mobile app;\nLogin to your Quickteller mobile ap\nTap on the loan you want to pay back under \"Active\" Loan history\nConfirm amount to pay.\nEnter card details and complete repayment",
+        "question": "How do I repay my loan using my mobile app?"
+      },
+      {
+        "text": "Check the status of your transaction for your token by clicking on \"check status\" on your dashboard. Or you can contact us at [email\u00a0protected]",
+        "question": "I paid my electricity bill but i am yet to receive my recharge pin/token"
+      },
+      {
+        "text": "Recharge\n*723*[Amount]#\n*723*[MobileNumber]*[Amount]#\nThis is a short code for a self-recharge transaction.\nUse this code to recharge other people\u2019s phone number.\nBalance enquiry\n*723*00#\nYou can use this code to check your account balance. This includes eCash account balance and your other bank accounts. Please note, extra cost may apply and your card must have been added on Quickteller.\nTransfer\n*723*[AccountNumber]*[Amount]#\nUse this code to transfer funds to a bank account.\nGenerate OTP\n*723*0#\nUse this code to generate OTP to complete your transaction.\nOpt out of OTP\n*723*0000#\nUse this code to opt out of using Quickteller USSD service.\nBill Payment\n*723*[PaymentCode]*[CustomerId]*[Amount]#\n*723*[PaymentCode]*[Amount]#\nUse this code to pay bills on Quickteller USSD service.\nLoans\n*723*6#\nAccess Quickteller loans from USSD service.\nPin Selection\n*723*3#\n*723*4#\nUse this code to select a new PIN when you have not activated your eCash.\nUse this code to change existing eCash PIN.\nGenerate Paycode for Withdrawal\n*723*8*Amount#\nUse this code to generate a Paycode of an amount between N1,000 and N20,000 in multiples of N1,000 and cash out at any Paycode Accepting ATM.",
+        "question": "What are the USSD codes if I want to do transactions by USSD?"
+      },
+      {
+        "text": "[email\u00a0protected]\n07009065000\n07009065000\nFacebook- @quickteller\nTwitter- @iswsupport",
+        "question": "How can I contact Quickteller or Interswitch Support t to do transactions by USSD?"
+      }
+    ]
+  },
+  {
+    "subject": "qt_rebirth_faq",
+    "documents": [
+      {
+        "text": "The New quick teller offers:\nBetter experience with our new and intuitive UI\nThe new Quickteller Account for faster transactions\nMultiple payments and many more",
+        "question": "What has changed on Quickteller?"
+      },
+      {
+        "text": "You can expect to make seamless instant payments to over 5,000 billers from different categories, faster transactions, a user-friendly interface and many more.",
+        "question": "What should I expect on Quickteller?"
+      },
+      {
+        "text": "Quickteller is the digital commerce platform that provides access to everyday lifestyle services anytime and anywhere on one app to make you live smarter and stay in control of your finances.",
+        "question": "What is Quickteller?"
+      },
+      {
+        "text": "On Quickteller, you can pay bills, send and receive money, request payments from friends and family, buy airtime and data, take loans etc. Simply put, you can pay for almost anything on Quickteller.",
+        "question": "What can I do on Quickteller?"
+      },
+      {
+        "text": "Your ecash is now located in your wallet. To view your ecash, sign in Quickteller and navigate to wallet to view your eCash balance.\nIs ecash the same as QT account?\nNo. eCash is a virtual card with limitations while the Quickteller account is a NUBAN standard account (with a 10-digit account number) for receiving funds,sending money and for making payments.",
+        "question": "I am an existing customer.Why can't I see my ecash on the dashboard?"
+      },
+      {
+        "text": "You can't fund your eCash on the new Quickteller.",
+        "question": "How can I fund my ecash?"
+      },
+      {
+        "text": "No, you can only move money from your eCash wallet into your Quckteller account.",
+        "question": "Can I fund my ecash with QT account?"
+      },
+      {
+        "text": "Quickteller is a fully digital platform that allows individuals and businesses to make transactions with ease. With Quickteller, you can get a digital account which is not eCash. The eCash is a virtual card with limitation which can't be used for all transactions.",
+        "question": "Why can't I see my ecash as a payment option on the payment page?"
+      },
+      {
+        "text": "Your ecash is mapped to your account in our system, so we know the transaction is from you.",
+        "question": "Why don't I need a PIN to move money from my ecash account to my QT account?"
+      },
+      {
+        "text": "No you can't because you already have an existing profile. Simply make use of the details used during onboarding to sign in. You can only sign in with google if you used the sign up with google option when creating your account.",
+        "question": "I am a returning user but I can't sign in with google. What should I do?"
+      },
+      {
+        "text": "You can sign up to Quickteller using your phone number, email, google ID, Apple ID on the web, mobile app and USSD on a feature phone. The signup process is quick and intuitive, simply download the mobile app from your play store or visit the web on www.quickteller.com/signup and follow the easy steps, or dial *723# on your smart phone or feature phone. (click here to see how)",
+        "question": "How do I sign up on the new Quickteller (for new users only)"
+      },
+      {
+        "text": "The Quickteller Wallet system is a digital representation of your physical wallet. It houses your Quickteller Account, your ecash and your bank cards from other banks giving you a single view into all your balances.\nHow do I move money from my ecash to my QT Account",
+        "question": "What is the Quickteller Wallet?"
+      },
+      {
+        "text": "Sign in to Quickteller.\nClick on wallet and navigate to eCash.\nClick on wallet and navigate to eCash.\nClick on pay.\nCongratulations! you have now moved funds to your QT account.",
+        "question": "How do I move money from my ecash to my QT Account"
+      },
+      {
+        "text": "You can add as many bank cards as you want to your wallet.",
+        "question": "How many bank cards can I add to my wallet?"
+      },
+      {
+        "text": "It's very easy, simply follow the steps below:\nSign in to your Quickteller account\nClick on wallet and navigate to Bank Cards\nClick on the bank card to view\nClick on check balance and insert CVV and card PIN\nClick check balance to view card balance",
+        "question": "How do I check my card balance"
+      },
+      {
+        "text": "To delete your card from your wallet, follow the steps below:\nSign into the Quickteller platform\nClick on wallet and navigate to Bank Cards\nSelect the card you wish to remove\nClick on remove to remove the saved card",
+        "question": "How can I delete a card from my wallet?"
+      },
+      {
+        "text": "Verve cards and Naira MasterCards are currently accepted for all transaction types. VISA cards are also supported for airtime and bill payments on the website.",
+        "question": "What type of card can I use to make payment on Quickteller?"
+      },
+      {
+        "text": "On Quickteller you can pay with your bank cards (Master, Visa, Verve), Pay With Transfer and Pay with your Quickteller account. We are always innovating, so look out for newer ways to pay.",
+        "question": "What are the Accepted payment instruments on Quickteller"
+      },
+      {
+        "text": "On Quickteller you can pay with your bank cards (Master, Visa, Verve), Pay With Transfer and Pay with your Quickteller account. We are always innovating, so look out for newer ways to pay.",
+        "question": "What are the Accepted payment instruments on Quickteller"
+      }
+    ]
+  }
+]

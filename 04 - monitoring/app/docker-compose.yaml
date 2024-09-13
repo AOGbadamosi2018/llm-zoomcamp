@@ -1,0 +1,56 @@
+version: '3.8'
+
+services:
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:8.4.3
+    environment:
+      - discovery.type=single-node
+      - xpack.security.enabled=false
+    ports:
+      - "9201:9200"
+      - "9301:9300"
+    volumes:
+      - elasticsearch_data:/usr/share/elasticsearch/data
+
+  ollama:
+    image: ollama/ollama
+    volumes:
+      - ollama_data:/root/.ollama
+    environment:
+      - OLLAMA_NUM_PARALLEL=1
+    ports:
+      - "11434:11434"
+
+  postgres:
+    image: postgres:13
+    environment:
+      POSTGRES_DB: course_assistant
+      POSTGRES_USER: your_username
+      POSTGRES_PASSWORD: your_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  streamlit:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    environment:
+      - ELASTICSEARCH_URL=http://elasticsearch:9200
+      - OLLAMA_URL=http://ollama:11434/v1/
+      - POSTGRES_HOST=localhost
+      - POSTGRES_DB=${POSTGRES_DB:-course_assistant}
+      - POSTGRES_USER=${POSTGRES_USER:-your_username}
+      - POSTGRES_PASSWORD=${POSTGRES_PASSWORD:-your_password}
+    ports:
+      - "8501:8501"
+    depends_on:
+      - elasticsearch
+      - ollama
+      - postgres
+
+volumes:
+  elasticsearch_data:
+  ollama_data:
+  postgres_data:
